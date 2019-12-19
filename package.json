@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha --require test/setup.js",
     "dev": "nodemon src/server.js",
-    "start": "node src/server.js",
+    "start": "node src/blogful.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master"
   },
@@ -17,8 +17,11 @@
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "faker": "^4.1.0",
     "helmet": "^3.21.2",
-    "morgan": "^1.9.1"
+    "knex": "^0.20.4",
+    "morgan": "^1.9.1",
+    "pg": "^7.14.0"
   },
   "devDependencies": {
     "chai": "^4.2.0",
